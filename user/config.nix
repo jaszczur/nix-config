@@ -7,7 +7,7 @@ with (import <nixpkgs> {});
   packageOverrides = pkgs: with pkgs; {
     jaszczurPackages = pkgs.buildEnv {
       name = "jaszczur-packages";
-      paths = [ firefox-nightly-bin git ];
+      paths = [ firefox-nightly-bin git jetbrains.idea-community ];
     };
   };
 }
