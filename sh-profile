@@ -1,0 +1,12 @@
+#!/bin/sh
+
+export EDITOR="emacsclient -t"
+export VISUAL="emacsclient -c"
+export MP_FULLNAME="<xxx>"
+
+alias o=xdg-open
+alias e="$EDITOR"
+alias l=exa
+alias t=trash-put
+alias ll="exa -l"
+alias lg="exa --long --git"
