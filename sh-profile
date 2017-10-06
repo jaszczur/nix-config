@@ -4,8 +4,9 @@ export EDITOR="emacsclient -t"
 export VISUAL="emacsclient -c"
 export MP_FULLNAME="<xxx>"
 
-alias o=xdg-open
 alias e="$EDITOR"
+alias ev="$VISUAL"
+alias o=xdg-open
 alias l=exa
 alias t=trash-put
 alias ll="exa -l"

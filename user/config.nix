@@ -7,19 +7,18 @@ with (import <nixpkgs> {});
   packageOverrides = pkgs: with pkgs; {
     jaszczurUtilities = pkgs.buildEnv {
       name = "jaszczur-utilities";
-      paths = [ git exa ];
+      paths = [ git exa networkmanager_openvpn mpw ];
     };
     
     jaszczurDevTools = pkgs.buildEnv {
       name = "jaszczur-dev-tools";
-      paths = [ jetbrains.idea-community ];
+      paths = [ jdk jetbrains.idea-community emacs source-code-pro ];
     };
 
     jaszczurDesktop = pkgs.buildEnv {
       name = "jaszczur-desktop";
-      paths = [ firefox-nightly-bin ];
+      paths = [ firefox-nightly-bin google-chrome tdesktop ];
     };
-
 
     jaszczurPackages = pkgs.buildEnv {
       name = "jaszczur-packages";
