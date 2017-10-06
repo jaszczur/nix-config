@@ -2,7 +2,8 @@ with (import <nixpkgs> {});
 
 {
   allowUnfree = true;
-#  environment.systemPackages = [ pkgs.firefox-nightly-bin ];
+  services.emacs.enable = true;
+
   packageOverrides = pkgs: with pkgs; {
     jaszczurPackages = pkgs.buildEnv {
       name = "jaszczur-packages";
