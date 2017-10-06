@@ -1,7 +1,4 @@
-To build:
-
-```shell
-ln -s $PWD ~/.config/nixpkgs
-nix-env -iA pkgs.jaszczurPackages -f '<nixpkgs>'
-```
+Nix configuration:
+* **global**  - for the system (in `/etc/nixos/`)
+* **user** - for user (in `/home/<user>/.config/nixpkgs`)
 
