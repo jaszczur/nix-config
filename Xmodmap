@@ -1,0 +1,17 @@
+! -*- coding: utf-8 -*-
+! 2017-10-09 remap keys in order to provide better ergonomics
+! Dump ctrl keys: xmodmap -pke | egrep '(Control|Super|Alt|Menu)'
+
+! (option 1) Swap Super_L and Ctrl_L
+!clear control
+!clear mod4
+!keycode  37 = Super_L NoSymbol Super_L
+!keycode 133 = Control_L NoSymbol Control_L
+!keycode 134 = Super_R NoSymbol Super_R
+!add control = Control_L Control_R
+!add mod4 = Super_L
+
+! (Opion 2) Make CapsLock another Control
+remove Lock = Caps_Lock
+keysym Caps_Lock = Control_L
+add Control = Control_L
